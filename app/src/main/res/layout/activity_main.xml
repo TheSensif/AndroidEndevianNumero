@@ -28,10 +28,11 @@
     <EditText
         android:id="@+id/editTextNumberSigned"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
         android:ems="10"
         android:inputType="numberSigned"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />

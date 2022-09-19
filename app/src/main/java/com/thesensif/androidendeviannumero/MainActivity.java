@@ -18,13 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         int secretNumber = (int)(Math.random() * 100);
 
+
         Button button = findViewById(R.id.button);
         EditText editText = findViewById(R.id.editTextNumberSigned);
 
-        int uNumber = Integer.getInteger(String.valueOf(editText.getText()));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int uNumber = Integer.parseInt(editText.getText().toString());
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_LONG;
                 if (secretNumber == uNumber) {
